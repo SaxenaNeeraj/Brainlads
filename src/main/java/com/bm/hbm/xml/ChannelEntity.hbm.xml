@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.ChannelEntity" table="channel" schema="" catalog="brain">
+        <id name="channelId">
+            <column name="channel_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="channelCode">
+            <column name="channel_code" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="channelTypeId">
+            <column name="channel_type_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="channelParentId">
+            <column name="channel_parent_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="channelTopId">
+            <column name="channel_top_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="channelPSalution">
+            <column name="channel_p_salution" sql-type="varchar" length="5"/>
+        </property>
+        <property name="channelPFirstName">
+            <column name="channel_p_first_name" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelPMiddleName">
+            <column name="channel_p_middle_name" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelPLastName">
+            <column name="channel_p_last_name" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelPMobileNo">
+            <column name="channel_p_mobile_no" sql-type="varchar" length="20"/>
+        </property>
+        <property name="channelPdGender">
+            <column name="channel_pd_gender" sql-type="varchar" length="10"/>
+        </property>
+        <property name="channelPdDob">
+            <column name="channel_pd_dob" sql-type="varchar" length="20"/>
+        </property>
+        <property name="channelPdMartialStatus">
+            <column name="channel_pd_martial_status" sql-type="varchar" length="20"/>
+        </property>
+        <property name="channelPdEmail">
+            <column name="channel_pd_email" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelPdPrimaryLanguageId">
+            <column name="channel_pd_primary_language_id" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelPdSecondryLanguageId">
+            <column name="channel_pd_secondry_language_id" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelPdLandlineNumber">
+            <column name="channel_pd_landline_number" sql-type="varchar" length="20"/>
+        </property>
+        <property name="channelPdFaxNumber">
+            <column name="channel_pd_fax_number" sql-type="varchar" length="20"/>
+        </property>
+        <property name="channelPdFathersName">
+            <column name="channel_pd_fathers_name" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelPdMothersName">
+            <column name="channel_pd_mothers_name" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelPdSpouseName">
+            <column name="channel_pd_spouse_name" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelPdNomineeName">
+            <column name="channel_pd_nominee_name" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelPdNomineeIdType">
+            <column name="channel_pd_nominee_id_type" sql-type="varchar" length="20"/>
+        </property>
+        <property name="channelPdNomineeIdNumber">
+            <column name="channel_pd_nominee_id_number" sql-type="varchar" length="20"/>
+        </property>
+        <property name="channelAd1Unit">
+            <column name="channel_ad1_unit" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelAd1Street">
+            <column name="channel_ad1_street" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelAd1CountryId">
+            <column name="channel_ad1_country_id" sql-type="int" length="10"/>
+        </property>
+        <property name="channelAd1StateId">
+            <column name="channel_ad1_state_id" sql-type="int" length="10"/>
+        </property>
+        <property name="channelAd1CityId">
+            <column name="channel_ad1_city_id" sql-type="int" length="10"/>
+        </property>
+        <property name="channelAd1ZipCode">
+            <column name="channel_ad1_zip_code" sql-type="varchar" length="10"/>
+        </property>
+        <property name="channelAd2Unit">
+            <column name="channel_ad2_unit" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelAd2Street">
+            <column name="channel_ad2_street" sql-type="varchar" length="100"/>
+        </property>
+        <property name="channelAd2CountryId">
+            <column name="channel_ad2_country_id" sql-type="int" length="10"/>
+        </property>
+        <property name="channelAd2StateId">
+            <column name="channel_ad2_state_id" sql-type="int" length="10"/>
+        </property>
+        <property name="channelAd2CityId">
+            <column name="channel_ad2_city_id" sql-type="int" length="10"/>
+        </property>
+        <property name="channelAd2ZipCode">
+            <column name="channel_ad2_zip_code" sql-type="varchar" length="10"/>
+        </property>
+        <property name="channelSPlanId">
+            <column name="channel_s_plan_id" sql-type="int" length="10"/>
+        </property>
+        <property name="channelSWalletId">
+            <column name="channel_s_wallet_id" sql-type="int" length="10"/>
+        </property>
+        <property name="channelSAid">
+            <column name="channel_s_aid" sql-type="varchar" length="5"/>
+        </property>
+        <property name="channelSSal">
+            <column name="channel_s_sal" sql-type="varchar" length="5"/>
+        </property>
+        <property name="channelSSme">
+            <column name="channel_s_sme" sql-type="varchar" length="5"/>
+        </property>
+        <property name="channelCreationTs">
+            <column name="channel_creation_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="channelBlockTs">
+            <column name="channel_block_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="channelActivationTs">
+            <column name="channel_activation_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="channelCancelTs">
+            <column name="channel_cancel_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="channelStatusId">
+            <column name="channel_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="channelCts">
+            <column name="channel_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

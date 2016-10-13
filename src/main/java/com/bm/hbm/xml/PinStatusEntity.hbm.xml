@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.PinStatusEntity" table="pin_status" schema="" catalog="brain">
+        <id name="pinStatusId">
+            <column name="pin_status_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="pinStatusCode">
+            <column name="pin_status_code" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="pinStatusName">
+            <column name="pin_status_name" sql-type="varchar" length="50"/>
+        </property>
+        <property name="pinStatusCts">
+            <column name="pin_status_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

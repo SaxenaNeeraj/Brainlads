@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.PinAllocateEntity" table="pin_allocate" schema="" catalog="brain">
+        <id name="pinAllocateId">
+            <column name="pin_allocate_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="pinAllocateBatchId">
+            <column name="pin_allocate_batch_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinAllocateProductId">
+            <column name="pin_allocate_product_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinAllocateVendorCode">
+            <column name="pin_allocate_vendor_code" sql-type="varchar" length="20"/>
+        </property>
+        <property name="pinAllocateSerialNo">
+            <column name="pin_allocate_serial_no" sql-type="varchar" length="100"/>
+        </property>
+        <property name="pinAllocatePin">
+            <column name="pin_allocate_pin" sql-type="varchar"/>
+        </property>
+        <property name="pinAllocateChannelId">
+            <column name="pin_allocate_channel_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinAllocateAssignTrId">
+            <column name="pin_allocate_assign_tr_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinAllocateOrderId">
+            <column name="pin_allocate_order_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinAllocateActiveTs">
+            <column name="pin_allocate_active_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="pinAllocateExpiryTs">
+            <column name="pin_allocate_expiry_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="pinAllocateTerTs">
+            <column name="pin_allocate_ter_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="pinAllocateDwnTs">
+            <column name="pin_allocate_dwn_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="pinAllocateCurTs">
+            <column name="pin_allocate_cur_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="pinAllocatePinStatusId">
+            <column name="pin_allocate_pin_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="pinAllocateCts">
+            <column name="pin_allocate_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

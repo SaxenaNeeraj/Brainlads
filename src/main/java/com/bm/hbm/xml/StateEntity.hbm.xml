@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.StateEntity" table="state" schema="" catalog="brain">
+        <id name="stateId">
+            <column name="state_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="stateCountryId">
+            <column name="state_country_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="stateCode">
+            <column name="state_code" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="stateName">
+            <column name="state_name" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="stateStatusId">
+            <column name="state_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="stateCts">
+            <column name="state_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.TransactionsEntity" table="transactions" schema="" catalog="brain">
+        <id name="transactionsId">
+            <column name="transactions_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="transactionsChCode">
+            <column name="transactions_ch_code" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsChMobile">
+            <column name="transactions_ch_mobile" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsChId">
+            <column name="transactions_ch_id" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsChTypeId">
+            <column name="transactions_ch_type_id" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsInterfaceId">
+            <column name="transactions_interface_id" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsParentId">
+            <column name="transactions_parent_id" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsChRecipCode">
+            <column name="transactions_ch_recip_code" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsChRecipMobile">
+            <column name="transactions_ch_recip_mobile" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsChRecipChId">
+            <column name="transactions_ch_recip_ch_id" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsChRecipChTypeId">
+            <column name="transactions_ch_recip_ch_type_id" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsWalletId">
+            <column name="transactions_wallet_id" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsRecipWalletId">
+            <column name="transactions_recip_wallet_id" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsPreBal">
+            <column name="transactions_pre_bal" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="transactionsPostBal">
+            <column name="transactions_post_bal" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="transactionsRecipPreBal">
+            <column name="transactions_recip_pre_bal" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="transactionsRecipPostBal">
+            <column name="transactions_recip_post_bal" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="transactionsTransactionId">
+            <column name="transactions_transaction_id" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsTransTypeId">
+            <column name="transactions_trans_type_id" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsTransTypeCode">
+            <column name="transactions_trans_type_code" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsRefId">
+            <column name="transactions_ref_id" sql-type="int" length="10"/>
+        </property>
+        <property name="transactionsAgentTransId">
+            <column name="transactions_agent_trans_id" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsValue">
+            <column name="transactions_value" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="transactionsSiCode">
+            <column name="transactions_si_code" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsSiResultCode">
+            <column name="transactions_si_result_code" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsSiResultDesc">
+            <column name="transactions_si_result_desc" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsResultCode">
+            <column name="transactions_result_code" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsResultDesc">
+            <column name="transactions_result_desc" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsIp">
+            <column name="transactions_ip" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsOs">
+            <column name="transactions_os" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsValue1">
+            <column name="transactions_value1" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="transactionsValue2">
+            <column name="transactions_value2" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="transactionsValue3">
+            <column name="transactions_value3" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="transactionsValue4">
+            <column name="transactions_value4" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="transactionsValue5">
+            <column name="transactions_value5" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="transactionsValue6">
+            <column name="transactions_value6" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="transactionsValue7">
+            <column name="transactions_value7" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="transactionsV1">
+            <column name="transactions_v1" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsV2">
+            <column name="transactions_v2" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsV3">
+            <column name="transactions_v3" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsV4">
+            <column name="transactions_v4" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsV5">
+            <column name="transactions_v5" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsV6">
+            <column name="transactions_v6" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsV7">
+            <column name="transactions_v7" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsV8">
+            <column name="transactions_v8" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsV9">
+            <column name="transactions_v9" sql-type="varchar" length="20"/>
+        </property>
+        <property name="transactionsReqTs">
+            <column name="transactions_req_ts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+        <property name="transactionsResTs">
+            <column name="transactions_res_ts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.PackTransactionLimitsEntity" table="pack_transaction_limits" schema="" catalog="brain">
+        <id name="packTransactionLimitsId">
+            <column name="pack_transaction_limits_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="packTransactionLimitsPackId">
+            <column name="pack_transaction_limits_pack_id" sql-type="int" length="10"/>
+        </property>
+        <property name="packTransactionLimitsLimitsTypeId">
+            <column name="pack_transaction_limits_limits_type_id" sql-type="int" length="10"/>
+        </property>
+        <property name="packTransactionLimitsTransactionTypeId">
+            <column name="pack_transaction_limits_transaction_type_id" sql-type="int" length="10"/>
+        </property>
+        <property name="packTransactionLimitsValue">
+            <column name="pack_transaction_limits_value" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="packTransactionLimitsStatusId">
+            <column name="pack_transaction_limits_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="packTransactionLimitsCts">
+            <column name="pack_transaction_limits_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

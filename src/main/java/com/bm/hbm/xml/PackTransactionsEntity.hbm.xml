@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.PackTransactionsEntity" table="pack_transactions" schema="" catalog="brain">
+        <id name="packTransactionsId">
+            <column name="pack_transactions_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="packTransactionsPackId">
+            <column name="pack_transactions_pack_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="packTransactionsTransactionTypeId">
+            <column name="pack_transactions_transaction_type_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="packTransactionsChannelId">
+            <column name="pack_transactions_channel_id" sql-type="int" length="10"/>
+        </property>
+        <property name="packTransactionsProductId">
+            <column name="pack_transactions_product_id" sql-type="int" length="10"/>
+        </property>
+        <property name="packTransactionsMinValue">
+            <column name="pack_transactions_min_value" sql-type="int" length="10"/>
+        </property>
+        <property name="packTransactionsMaxValue">
+            <column name="pack_transactions_max_value" sql-type="int" length="10"/>
+        </property>
+        <property name="packTransactionsFeeType">
+            <column name="pack_transactions_fee_type" sql-type="varchar" length="1"/>
+        </property>
+        <property name="packTransactionsFee">
+            <column name="pack_transactions_fee" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="packTransactionsExtraFeeType">
+            <column name="pack_transactions_extra_fee_type" sql-type="varchar" length="1"/>
+        </property>
+        <property name="packTransactionsExtraFee">
+            <column name="pack_transactions_extra_fee" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="packTransactionsCommissonValue">
+            <column name="pack_transactions_commisson_value" sql-type="varchar" length="128"/>
+        </property>
+        <property name="packTransactionsStatusId">
+            <column name="pack_transactions_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="packTransactionsCts">
+            <column name="pack_transactions_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

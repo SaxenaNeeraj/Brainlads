@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.PinUploadFailEntity" table="pin_upload_fail" schema="" catalog="brain">
+        <id name="pinUploadFailId">
+            <column name="pin_upload_fail_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="pinUploadFailPinFailureReasonId">
+            <column name="pin_upload_fail_pin_failure_reason_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinUploadFailBatchId">
+            <column name="pin_upload_fail_batch_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinUploadFailProductId">
+            <column name="pin_upload_fail_product_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinUploadFailVendorCode">
+            <column name="pin_upload_fail_vendor_code" sql-type="varchar" length="20"/>
+        </property>
+        <property name="pinUploadFailSerialNo">
+            <column name="pin_upload_fail_serial_no" sql-type="varchar" length="100"/>
+        </property>
+        <property name="pinUploadFailPin">
+            <column name="pin_upload_fail_pin" sql-type="varchar"/>
+        </property>
+        <property name="pinUploadFailDenomination">
+            <column name="pin_upload_fail_denomination" sql-type="decimal" length="12" precision="2"/>
+        </property>
+        <property name="pinUploadFailExpiryTs">
+            <column name="pin_upload_fail_expiry_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="pinUploadFailPinStatusId">
+            <column name="pin_upload_fail_pin_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="pinUploadFailCts">
+            <column name="pin_upload_fail_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.PackEntity" table="pack" schema="" catalog="brain">
+        <id name="packId">
+            <column name="pack_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="packCode">
+            <column name="pack_code" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="packName">
+            <column name="pack_name" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="packChannelTypeId">
+            <column name="pack_channel_type_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="packFeeType">
+            <column name="pack_fee_type" sql-type="varchar" length="1"/>
+        </property>
+        <property name="packFee">
+            <column name="pack_fee" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="packExtraFeeType">
+            <column name="pack_extra_fee_type" sql-type="varchar" length="1"/>
+        </property>
+        <property name="packExtraFee">
+            <column name="pack_extra_fee" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="packStatusId">
+            <column name="pack_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="packCts">
+            <column name="pack_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

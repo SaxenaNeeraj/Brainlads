@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.ChannelTypeEntity" table="channel_type" schema="" catalog="brain">
+        <id name="channelTypeId">
+            <column name="channel_type_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="channelTypeCode">
+            <column name="channel_type_code" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="channelTypeName">
+            <column name="channel_type_name" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="channelTypePrecidence">
+            <column name="channel_type_precidence" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="channelTypeStatusId">
+            <column name="channel_type_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="channelTypeCts">
+            <column name="channel_type_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

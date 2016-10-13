@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.CityEntity" table="city" schema="" catalog="brain">
+        <id name="cityId">
+            <column name="city_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="cityStateId">
+            <column name="city_state_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="cityCode">
+            <column name="city_code" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="cityName">
+            <column name="city_name" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="cityStatusId">
+            <column name="city_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="cityCts">
+            <column name="city_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

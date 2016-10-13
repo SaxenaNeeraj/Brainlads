@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.LanguageEntity" table="language" schema="" catalog="brain">
+        <id name="languageId">
+            <column name="language_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="languageCountryId">
+            <column name="language_country_id" sql-type="int" length="10"/>
+        </property>
+        <property name="languageStateId">
+            <column name="language_state_id" sql-type="int" length="10"/>
+        </property>
+        <property name="languageCode">
+            <column name="language_code" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="languageName">
+            <column name="language_name" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="languageStatusId">
+            <column name="language_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="languageCts">
+            <column name="language_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

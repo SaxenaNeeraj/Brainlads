@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.RoleEntity" table="role" schema="" catalog="brain">
+        <id name="roleId">
+            <column name="role_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="roleCode">
+            <column name="role_code" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="roleName">
+            <column name="role_name" sql-type="varchar" length="50"/>
+        </property>
+        <property name="roleStatusId">
+            <column name="role_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="roleCts">
+            <column name="role_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.PinAvailableEntity" table="pin_available" schema="" catalog="brain">
+        <id name="pinAvailableId">
+            <column name="pin_available_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="pinAvailableBatchId">
+            <column name="pin_available_batch_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinAvailableProductId">
+            <column name="pin_available_product_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinAvailableVendorCode">
+            <column name="pin_available_vendor_code" sql-type="varchar" length="20"/>
+        </property>
+        <property name="pinAvailableSerialNo">
+            <column name="pin_available_serial_no" sql-type="varchar" length="100"/>
+        </property>
+        <property name="pinAvailablePin">
+            <column name="pin_available_pin" sql-type="varchar"/>
+        </property>
+        <property name="pinAvailableDenomination">
+            <column name="pin_available_denomination" sql-type="decimal" length="12" precision="2"/>
+        </property>
+        <property name="pinAvailableActiveTs">
+            <column name="pin_available_active_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="pinAvailableExpiryTs">
+            <column name="pin_available_expiry_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="pinAvailablePinStatusId">
+            <column name="pin_available_pin_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="pinAvailableCts">
+            <column name="pin_available_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.PinFailureReasonEntity" table="pin_failure_reason" schema="" catalog="brain">
+        <id name="pinFailureReasonId">
+            <column name="pin_failure_reason_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="pinFailureReasonCode">
+            <column name="pin_failure_reason_code" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="pinFailureReasonName">
+            <column name="pin_failure_reason_name" sql-type="varchar" length="50"/>
+        </property>
+        <property name="pinFailureReasonCts">
+            <column name="pin_failure_reason_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

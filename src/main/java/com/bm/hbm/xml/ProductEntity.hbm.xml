@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.ProductEntity" table="product" schema="" catalog="brain">
+        <id name="productId">
+            <column name="product_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="productCode">
+            <column name="product_code" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="productName">
+            <column name="product_name" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="productSiId">
+            <column name="product_si_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="productCountryId">
+            <column name="product_country_id" sql-type="int" length="10"/>
+        </property>
+        <property name="productIsflexi">
+            <column name="product_isflexi" sql-type="tinyint" length="3"/>
+        </property>
+        <property name="productValue">
+            <column name="product_value" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="productStatusId">
+            <column name="product_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="productCts">
+            <column name="product_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

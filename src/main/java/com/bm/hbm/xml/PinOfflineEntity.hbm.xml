@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.PinOfflineEntity" table="pin_offline" schema="" catalog="brain">
+        <id name="pinOfflineId">
+            <column name="pin_offline_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="pinOfflineBatchId">
+            <column name="pin_offline_batch_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinOfflineProductId">
+            <column name="pin_offline_product_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinOfflineVendorCode">
+            <column name="pin_offline_vendor_code" sql-type="varchar" length="20"/>
+        </property>
+        <property name="pinOfflineSerialNo">
+            <column name="pin_offline_serial_no" sql-type="varchar" length="100"/>
+        </property>
+        <property name="pinOfflinePin">
+            <column name="pin_offline_pin" sql-type="varchar"/>
+        </property>
+        <property name="pinOfflineDenomination">
+            <column name="pin_offline_denomination" sql-type="decimal" length="12" precision="2"/>
+        </property>
+        <property name="pinOfflineActiveTs">
+            <column name="pin_offline_active_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="pinOfflineExpiryTs">
+            <column name="pin_offline_expiry_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="pinOfflinePinStatusId">
+            <column name="pin_offline_pin_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="pinOfflineCts">
+            <column name="pin_offline_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

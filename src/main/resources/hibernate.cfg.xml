@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password"/>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/brain</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+
+        <mapping class="com.bm.hbm.ChannelEntity" />
+        <mapping class="com.bm.hbm.ChannelTypeEntity"/>
+        <mapping class="com.bm.hbm.CityEntity"/>
+        <mapping class="com.bm.hbm.CountryEntity"/>
+        <mapping class="com.bm.hbm.InterfaceEntity"/>
+        <mapping class="com.bm.hbm.InterfaceTypeEntity"/>
+        <mapping class="com.bm.hbm.LanguageEntity"/>
+        <mapping class="com.bm.hbm.LimitsTypeEntity"/>
+        <mapping class="com.bm.hbm.PackEntity"/>
+        <mapping class="com.bm.hbm.PackTransactionLimitsEntity"/>
+        <mapping class="com.bm.hbm.PackTransactionsEntity"/>
+        <mapping class="com.bm.hbm.PinAllocateEntity"/>
+        <mapping class="com.bm.hbm.PinAvailableEntity"/>
+        <mapping class="com.bm.hbm.PinFailureReasonEntity"/>
+        <mapping class="com.bm.hbm.PinOfflineEntity"/>
+        <mapping class="com.bm.hbm.PinStatusEntity"/>
+        <mapping class="com.bm.hbm.PinUploadFailEntity"/>
+        <mapping class="com.bm.hbm.PinUploadInfoEntity"/>
+        <mapping class="com.bm.hbm.PrefixEntity"/>
+        <mapping class="com.bm.hbm.ProductEntity"/>
+        <mapping class="com.bm.hbm.ProductInfoEntity"/>
+        <mapping class="com.bm.hbm.RoleEntity"/>
+        <mapping class="com.bm.hbm.ServiceIntegratorEntity"/>
+        <mapping class="com.bm.hbm.StateEntity"/>
+        <mapping class="com.bm.hbm.StatusEntity"/>
+        <mapping class="com.bm.hbm.TransactionTypeEntity"/>
+        <mapping class="com.bm.hbm.TransactionsEntity"/>
+        <mapping class="com.bm.hbm.UserEntity"/>
+        <mapping class="com.bm.hbm.WalletEntity"/>
+        <mapping class="com.bm.hbm.WalletTypeEntity"/>
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.LimitsTypeEntity" table="limits_type" schema="" catalog="brain">
+        <id name="limitsTypeId">
+            <column name="limits_type_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="limitsTypeCode">
+            <column name="limits_type_code" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="limitsTypeName">
+            <column name="limits_type_name" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="limitsTypeStatusId">
+            <column name="limits_type_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="limitsTypeCts">
+            <column name="limits_type_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.WalletEntity" table="wallet" schema="" catalog="brain">
+        <id name="walletId">
+            <column name="wallet_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="walletTypeId">
+            <column name="wallet_type_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="walletValue">
+            <column name="wallet_value" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="walletAllocatedValue">
+            <column name="wallet_allocated_value" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="walletMinValue">
+            <column name="wallet_min_value" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="walletMaxValue">
+            <column name="wallet_max_value" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="walletAlertValue">
+            <column name="wallet_alert_value" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="walletNotifyMsisdn">
+            <column name="wallet_notify_msisdn" sql-type="varchar" length="20"/>
+        </property>
+        <property name="walletNotifyEmail">
+            <column name="wallet_notify_email" sql-type="varchar" length="100"/>
+        </property>
+        <property name="walletStatusId">
+            <column name="wallet_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="walletCts">
+            <column name="wallet_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

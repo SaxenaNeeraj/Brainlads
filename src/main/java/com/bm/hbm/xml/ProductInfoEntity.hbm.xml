@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.ProductInfoEntity" table="product_info" schema="" catalog="brain">
+        <id name="productInfoId">
+            <column name="product_info_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="productInfoProductId">
+            <column name="product_info_product_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="productInfoMin">
+            <column name="product_info_min" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="productInfoMax">
+            <column name="product_info_max" sql-type="decimal" length="19" precision="4"/>
+        </property>
+        <property name="productInfoStatusId">
+            <column name="product_info_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="productInfoCts">
+            <column name="product_info_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

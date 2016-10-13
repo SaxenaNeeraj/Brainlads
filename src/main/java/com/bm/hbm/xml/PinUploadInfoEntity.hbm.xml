@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bm.hbm.PinUploadInfoEntity" table="pin_upload_info" schema="" catalog="brain">
+        <id name="pinUploadInfoId">
+            <column name="pin_upload_info_id" sql-type="int" length="10" not-null="true"/>
+        </id>
+        <property name="pinUploadInfoUserId">
+            <column name="pin_upload_info_user_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinUploadInfoProductId">
+            <column name="pin_upload_info_product_id" sql-type="int" length="10"/>
+        </property>
+        <property name="pinUploadInfoFileName">
+            <column name="pin_upload_info_file_name" sql-type="varchar" length="100"/>
+        </property>
+        <property name="pinUploadInfoStartTs">
+            <column name="pin_upload_info_start_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="pinUploadInfoFinishTs">
+            <column name="pin_upload_info_finish_ts" sql-type="datetime" length="19"/>
+        </property>
+        <property name="pinUploadInfoSuccessCount">
+            <column name="pin_upload_info_success_count" sql-type="int" length="10"/>
+        </property>
+        <property name="pinUploadInfoFailCount">
+            <column name="pin_upload_info_fail_count" sql-type="int" length="10"/>
+        </property>
+        <property name="pinUploadInfoTotalCount">
+            <column name="pin_upload_info_total_count" sql-type="int" length="10"/>
+        </property>
+        <property name="pinUploadInfoPinStatusId">
+            <column name="pin_upload_info_pin_status_id" sql-type="int" length="10" not-null="true"/>
+        </property>
+        <property name="pinUploadInfoCts">
+            <column name="pin_upload_info_cts" sql-type="timestamp" length="19" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

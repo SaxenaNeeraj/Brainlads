@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="MySQL - brain@localhost" uuid="3274aaae-6fc1-4ed8-a10f-296b393e885d">
+    <database-info product="MySQL" version="5.0.45-community-nt" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="brain"/>
+    <table name="channel" schema="" catalog="brain" type="TABLE">
+      <column name="channel_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="channel_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="channel_type_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="channel_parent_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="channel_top_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="channel_p_salution" sqlType="VARCHAR" length="5" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_p_first_name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_p_middle_name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_p_last_name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_p_mobile_no" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_gender" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_dob" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_martial_status" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_email" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_primary_language_id" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_secondry_language_id" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_landline_number" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_fax_number" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_fathers_name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_mothers_name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_spouse_name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_nominee_name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_nominee_id_type" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_pd_nominee_id_number" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_ad1_unit" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_ad1_street" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_ad1_country_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="channel_ad1_state_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="channel_ad1_city_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="channel_ad1_zip_code" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_ad2_unit" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_ad2_street" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_ad2_country_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="channel_ad2_state_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="channel_ad2_city_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="channel_ad2_zip_code" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_s_plan_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="channel_s_wallet_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="channel_s_aid" sqlType="VARCHAR" length="5" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_s_sal" sqlType="VARCHAR" length="5" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_s_sme" sqlType="VARCHAR" length="5" precision="0" nullable="true" jdbcType="12"/>
+      <column name="channel_creation_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="channel_block_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="channel_activation_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="channel_cancel_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="channel_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="channel_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="channel_id"/>
+      <foreign-key name="fk_channel_ad1_city_id" columns="channel_ad1_city_id" ref-table="city" ref-schema="" ref-catalog="brain" ref-columns="city_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_channel_ad1_country_id" columns="channel_ad1_country_id" ref-table="country" ref-schema="" ref-catalog="brain" ref-columns="country_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_channel_ad1_state_id" columns="channel_ad1_state_id" ref-table="state" ref-schema="" ref-catalog="brain" ref-columns="state_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_channel_ad2_city_id" columns="channel_ad2_city_id" ref-table="city" ref-schema="" ref-catalog="brain" ref-columns="city_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_channel_ad2_country_id" columns="channel_ad2_country_id" ref-table="country" ref-schema="" ref-catalog="brain" ref-columns="country_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_channel_ad2_state_id" columns="channel_ad2_state_id" ref-table="state" ref-schema="" ref-catalog="brain" ref-columns="state_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_channel_status_id" columns="channel_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_channel_s_wallet_id" columns="channel_s_wallet_id" ref-table="wallet" ref-schema="" ref-catalog="brain" ref-columns="wallet_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_channel_type_id" columns="channel_type_id" ref-table="channel_type" ref-schema="" ref-catalog="brain" ref-columns="channel_type_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="fk_interface_channel_id" table="interface" schema="" catalog="brain" columns="interface_channel_id"/>
+      <exported-key name="fk_pin_allocate_channel_id" table="pin_allocate" schema="" catalog="brain" columns="pin_allocate_channel_id"/>
+    </table>
+    <table name="channel_type" schema="" catalog="brain" type="TABLE">
+      <column name="channel_type_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="channel_type_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="channel_type_name" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="channel_type_precidence" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="channel_type_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="channel_type_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="channel_type_id"/>
+      <foreign-key name="fk_channel_type_status_id" columns="channel_type_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="fk_channel_type_id" table="channel" schema="" catalog="brain" columns="channel_type_id"/>
+      <exported-key name="fk_pack_channel_type_id" table="pack" schema="" catalog="brain" columns="pack_channel_type_id"/>
+    </table>
+    <table name="city" schema="" catalog="brain" type="TABLE">
+      <column name="city_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="city_state_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="city_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="city_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="city_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="city_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="city_id"/>
+      <foreign-key name="fk_city_state_id" columns="city_state_id" ref-table="state" ref-schema="" ref-catalog="brain" ref-columns="state_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_city_status_id" columns="city_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="fk_channel_ad1_city_id" table="channel" schema="" catalog="brain" columns="channel_ad1_city_id"/>
+      <exported-key name="fk_channel_ad2_city_id" table="channel" schema="" catalog="brain" columns="channel_ad2_city_id"/>
+    </table>
+    <table name="country" schema="" catalog="brain" type="TABLE">
+      <column name="country_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="country_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="country_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="country_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="country_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="country_id"/>
+      <foreign-key name="fk_country_status_id" columns="country_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="fk_channel_ad1_country_id" table="channel" schema="" catalog="brain" columns="channel_ad1_country_id"/>
+      <exported-key name="fk_channel_ad2_country_id" table="channel" schema="" catalog="brain" columns="channel_ad2_country_id"/>
+      <exported-key name="fk_product_country_id" table="product" schema="" catalog="brain" columns="product_country_id"/>
+      <exported-key name="fk_service_integrator_country_id" table="service_integrator" schema="" catalog="brain" columns="service_integrator_country_id"/>
+      <exported-key name="fk_state_country_id" table="state" schema="" catalog="brain" columns="state_country_id"/>
+    </table>
+    <table name="interface" schema="" catalog="brain" type="TABLE">
+      <column name="interface_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="interface_channel_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="interface_type_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="interface_mobile_no" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="interface_imei" sqlType="VARCHAR" length="25" precision="0" nullable="true" jdbcType="12"/>
+      <column name="interface_password" sqlType="VARCHAR" length="128" precision="0" nullable="true" jdbcType="12"/>
+      <column name="interface_ip" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="interface_mac" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="interface_auto_sync" sqlType="VARCHAR" length="5" precision="0" nullable="true" jdbcType="12"/>
+      <column name="interface_srv" sqlType="VARCHAR" length="5" precision="0" nullable="true" jdbcType="12"/>
+      <column name="interface_activation" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="interface_block" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="interface_inactive" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="interface_cancel" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="interface_attempt_ctr" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="interface_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="interface_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="interface_id"/>
+      <foreign-key name="fk_interface_channel_id" columns="interface_channel_id" ref-table="channel" ref-schema="" ref-catalog="brain" ref-columns="channel_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_interface_status_id" columns="interface_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_interface_type_id" columns="interface_type_id" ref-table="interface_type" ref-schema="" ref-catalog="brain" ref-columns="interface_type_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="interface_type" schema="" catalog="brain" type="TABLE">
+      <column name="interface_type_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="interface_type_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="interface_type_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="interface_type_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="interface_type_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="interface_type_id"/>
+      <foreign-key name="fk_interface_type_status_id" columns="interface_type_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="fk_interface_type_id" table="interface" schema="" catalog="brain" columns="interface_type_id"/>
+    </table>
+    <table name="language" schema="" catalog="brain" type="TABLE">
+      <column name="language_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="language_country_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="language_state_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="language_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="language_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="language_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="language_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="language_id"/>
+      <foreign-key name="fk_language_status_id" columns="language_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="limits_type" schema="" catalog="brain" type="TABLE">
+      <column name="limits_type_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="limits_type_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="limits_type_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="limits_type_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="limits_type_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="limits_type_id"/>
+      <foreign-key name="fk_limits_type_status_id" columns="limits_type_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="fk_pack_transaction_limits_limits_type_id" table="pack_transaction_limits" schema="" catalog="brain" columns="pack_transaction_limits_limits_type_id"/>
+    </table>
+    <table name="pack" schema="" catalog="brain" type="TABLE">
+      <column name="pack_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pack_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="pack_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="pack_channel_type_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="pack_fee_type" sqlType="VARCHAR" length="1" precision="0" nullable="true" jdbcType="12" def="J0Yn"/>
+      <column name="pack_fee" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3" def="MC4wMDAw"/>
+      <column name="pack_extra_fee_type" sqlType="VARCHAR" length="1" precision="0" nullable="true" jdbcType="12" def="J0Yn"/>
+      <column name="pack_extra_fee" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3" def="MC4wMDAw"/>
+      <column name="pack_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="pack_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="pack_id"/>
+      <foreign-key name="fk_pack_channel_type_id" columns="pack_channel_type_id" ref-table="channel_type" ref-schema="" ref-catalog="brain" ref-columns="channel_type_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_pack_status_id" columns="pack_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="fk_pack_transaction_limits_pack_id" table="pack_transaction_limits" schema="" catalog="brain" columns="pack_transaction_limits_pack_id"/>
+      <exported-key name="fk_pack_transactions_pack_id" table="pack_transactions" schema="" catalog="brain" columns="pack_transactions_pack_id"/>
+    </table>
+    <table name="pack_transaction_limits" schema="" catalog="brain" type="TABLE">
+      <column name="pack_transaction_limits_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pack_transaction_limits_pack_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pack_transaction_limits_limits_type_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pack_transaction_limits_transaction_type_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pack_transaction_limits_value" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="pack_transaction_limits_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="pack_transaction_limits_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="pack_transaction_limits_id"/>
+      <foreign-key name="fk_pack_transaction_limits_limits_type_id" columns="pack_transaction_limits_limits_type_id" ref-table="limits_type" ref-schema="" ref-catalog="brain" ref-columns="limits_type_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_pack_transaction_limits_pack_id" columns="pack_transaction_limits_pack_id" ref-table="pack" ref-schema="" ref-catalog="brain" ref-columns="pack_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_pack_transaction_limits_status_id" columns="pack_transaction_limits_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_pack_transaction_limits_transaction_type_id" columns="pack_transaction_limits_transaction_type_id" ref-table="transaction_type" ref-schema="" ref-catalog="brain" ref-columns="transaction_type_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="pack_transactions" schema="" catalog="brain" type="TABLE">
+      <column name="pack_transactions_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pack_transactions_pack_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="pack_transactions_transaction_type_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="pack_transactions_channel_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pack_transactions_product_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pack_transactions_min_value" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pack_transactions_max_value" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pack_transactions_fee_type" sqlType="VARCHAR" length="1" precision="0" nullable="true" jdbcType="12" def="J0Yn"/>
+      <column name="pack_transactions_fee" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3" def="MC4wMDAw"/>
+      <column name="pack_transactions_extra_fee_type" sqlType="VARCHAR" length="1" precision="0" nullable="true" jdbcType="12" def="J0Yn"/>
+      <column name="pack_transactions_extra_fee" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3" def="MC4wMDAw"/>
+      <column name="pack_transactions_commisson_value" sqlType="VARCHAR" length="128" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pack_transactions_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="pack_transactions_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="pack_transactions_id"/>
+      <foreign-key name="fk_pack_transactions_pack_id" columns="pack_transactions_pack_id" ref-table="pack" ref-schema="" ref-catalog="brain" ref-columns="pack_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_pack_transactions_status_id" columns="pack_transactions_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_pack_transactions_transaction_type_id" columns="pack_transactions_transaction_type_id" ref-table="transaction_type" ref-schema="" ref-catalog="brain" ref-columns="transaction_type_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="pin_allocate" schema="" catalog="brain" type="TABLE">
+      <column name="pin_allocate_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pin_allocate_batch_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_allocate_product_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_allocate_vendor_code" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_allocate_serial_no" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_allocate_pin" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_allocate_channel_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_allocate_assign_tr_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_allocate_order_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_allocate_active_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pin_allocate_expiry_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pin_allocate_ter_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pin_allocate_dwn_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pin_allocate_cur_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pin_allocate_pin_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="pin_allocate_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="pin_allocate_id"/>
+      <foreign-key name="fk_pin_allocate_channel_id" columns="pin_allocate_channel_id" ref-table="channel" ref-schema="" ref-catalog="brain" ref-columns="channel_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_pin_allocate_pin_status_id" columns="pin_allocate_pin_status_id" ref-table="pin_status" ref-schema="" ref-catalog="brain" ref-columns="pin_status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_pin_allocate_product_id" columns="pin_allocate_product_id" ref-table="product" ref-schema="" ref-catalog="brain" ref-columns="product_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="pin_available" schema="" catalog="brain" type="TABLE">
+      <column name="pin_available_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pin_available_batch_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_available_product_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_available_vendor_code" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_available_serial_no" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_available_pin" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_available_denomination" sqlType="DECIMAL" length="12" precision="2" nullable="true" jdbcType="3"/>
+      <column name="pin_available_active_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pin_available_expiry_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pin_available_pin_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="pin_available_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="pin_available_id"/>
+      <foreign-key name="fk_pin_available_pin_status_id" columns="pin_available_pin_status_id" ref-table="pin_status" ref-schema="" ref-catalog="brain" ref-columns="pin_status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_pin_available_product_id" columns="pin_available_product_id" ref-table="pin_status" ref-schema="" ref-catalog="brain" ref-columns="pin_status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="pin_failure_reason" schema="" catalog="brain" type="TABLE">
+      <column name="pin_failure_reason_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pin_failure_reason_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="pin_failure_reason_name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_failure_reason_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="pin_failure_reason_id"/>
+    </table>
+    <table name="pin_offline" schema="" catalog="brain" type="TABLE">
+      <column name="pin_offline_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pin_offline_batch_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_offline_product_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_offline_vendor_code" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_offline_serial_no" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_offline_pin" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_offline_denomination" sqlType="DECIMAL" length="12" precision="2" nullable="true" jdbcType="3"/>
+      <column name="pin_offline_active_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pin_offline_expiry_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pin_offline_pin_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="pin_offline_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="pin_offline_id"/>
+      <foreign-key name="fk_pin_offline_pin_status_id" columns="pin_offline_pin_status_id" ref-table="pin_status" ref-schema="" ref-catalog="brain" ref-columns="pin_status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_pin_offline_product_id" columns="pin_offline_product_id" ref-table="product" ref-schema="" ref-catalog="brain" ref-columns="product_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="pin_status" schema="" catalog="brain" type="TABLE">
+      <column name="pin_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pin_status_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="pin_status_name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_status_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="pin_status_id"/>
+      <exported-key name="fk_pin_allocate_pin_status_id" table="pin_allocate" schema="" catalog="brain" columns="pin_allocate_pin_status_id"/>
+      <exported-key name="fk_pin_available_pin_status_id" table="pin_available" schema="" catalog="brain" columns="pin_available_pin_status_id"/>
+      <exported-key name="fk_pin_available_product_id" table="pin_available" schema="" catalog="brain" columns="pin_available_product_id"/>
+      <exported-key name="fk_pin_offline_pin_status_id" table="pin_offline" schema="" catalog="brain" columns="pin_offline_pin_status_id"/>
+      <exported-key name="fk_pin_upload_fail_pin_status_id" table="pin_upload_fail" schema="" catalog="brain" columns="pin_upload_fail_pin_status_id"/>
+      <exported-key name="fk_pin_upload_info_pin_status_id" table="pin_upload_info" schema="" catalog="brain" columns="pin_upload_info_pin_status_id"/>
+    </table>
+    <table name="pin_upload_fail" schema="" catalog="brain" type="TABLE">
+      <column name="pin_upload_fail_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pin_upload_fail_pin_failure_reason_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_upload_fail_batch_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_upload_fail_product_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_upload_fail_vendor_code" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_upload_fail_serial_no" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_upload_fail_pin" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_upload_fail_denomination" sqlType="DECIMAL" length="12" precision="2" nullable="true" jdbcType="3"/>
+      <column name="pin_upload_fail_expiry_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pin_upload_fail_pin_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="pin_upload_fail_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="pin_upload_fail_id"/>
+      <foreign-key name="fk_pin_upload_fail_pin_status_id" columns="pin_upload_fail_pin_status_id" ref-table="pin_status" ref-schema="" ref-catalog="brain" ref-columns="pin_status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_pin_upload_fail_product_id" columns="pin_upload_fail_product_id" ref-table="product" ref-schema="" ref-catalog="brain" ref-columns="product_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="pin_upload_info" schema="" catalog="brain" type="TABLE">
+      <column name="pin_upload_info_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pin_upload_info_user_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_upload_info_product_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="pin_upload_info_file_name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pin_upload_info_start_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pin_upload_info_finish_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pin_upload_info_success_count" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="pin_upload_info_fail_count" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="pin_upload_info_total_count" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="pin_upload_info_pin_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="pin_upload_info_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="pin_upload_info_id"/>
+      <foreign-key name="fk_pin_upload_info_pin_status_id" columns="pin_upload_info_pin_status_id" ref-table="pin_status" ref-schema="" ref-catalog="brain" ref-columns="pin_status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_pin_upload_info_product_id" columns="pin_upload_info_product_id" ref-table="product" ref-schema="" ref-catalog="brain" ref-columns="product_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="prefix" schema="" catalog="brain" type="TABLE">
+      <column name="prefix_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="prefix_code" sqlType="VARCHAR" length="10" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="prefix_si_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="prefix_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="prefix_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="prefix_id"/>
+      <foreign-key name="fk_prefix_si_id" columns="prefix_si_id" ref-table="service_integrator" ref-schema="" ref-catalog="brain" ref-columns="service_integrator_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_prefix_status_id" columns="prefix_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="product" schema="" catalog="brain" type="TABLE">
+      <column name="product_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="product_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="product_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="product_si_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="product_country_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="product_isflexi" sqlType="TINYINT" length="3" precision="0" nullable="true" jdbcType="-6" def="MQ=="/>
+      <column name="product_value" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3" def="MC4wMDAw"/>
+      <column name="product_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="product_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="product_id"/>
+      <foreign-key name="fk_product_country_id" columns="product_country_id" ref-table="country" ref-schema="" ref-catalog="brain" ref-columns="country_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_product_si_id" columns="product_si_id" ref-table="service_integrator" ref-schema="" ref-catalog="brain" ref-columns="service_integrator_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_product_status_id" columns="product_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="fk_pin_allocate_product_id" table="pin_allocate" schema="" catalog="brain" columns="pin_allocate_product_id"/>
+      <exported-key name="fk_pin_offline_product_id" table="pin_offline" schema="" catalog="brain" columns="pin_offline_product_id"/>
+      <exported-key name="fk_pin_upload_fail_product_id" table="pin_upload_fail" schema="" catalog="brain" columns="pin_upload_fail_product_id"/>
+      <exported-key name="fk_pin_upload_info_product_id" table="pin_upload_info" schema="" catalog="brain" columns="pin_upload_info_product_id"/>
+      <exported-key name="fk_product_info_product_id" table="product_info" schema="" catalog="brain" columns="product_info_product_id"/>
+    </table>
+    <table name="product_info" schema="" catalog="brain" type="TABLE">
+      <column name="product_info_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="product_info_product_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="product_info_min" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3" def="MC4wMDAw"/>
+      <column name="product_info_max" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3" def="MC4wMDAw"/>
+      <column name="product_info_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="product_info_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="product_info_id"/>
+      <foreign-key name="fk_product_info_product_id" columns="product_info_product_id" ref-table="product" ref-schema="" ref-catalog="brain" ref-columns="product_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_product_info_status_id" columns="product_info_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="role" schema="" catalog="brain" type="TABLE">
+      <column name="role_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="role_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="role_name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="role_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="role_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="role_id"/>
+      <foreign-key name="fk_role_status_id" columns="role_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="service_integrator" schema="" catalog="brain" type="TABLE">
+      <column name="service_integrator_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="service_integrator_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="service_integrator_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="service_integrator_country_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="service_integrator_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="service_integrator_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="service_integrator_id"/>
+      <foreign-key name="fk_service_integrator_country_id" columns="service_integrator_country_id" ref-table="country" ref-schema="" ref-catalog="brain" ref-columns="country_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_service_integrator_status_id" columns="service_integrator_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="fk_prefix_si_id" table="prefix" schema="" catalog="brain" columns="prefix_si_id"/>
+      <exported-key name="fk_product_si_id" table="product" schema="" catalog="brain" columns="product_si_id"/>
+    </table>
+    <table name="state" schema="" catalog="brain" type="TABLE">
+      <column name="state_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="state_country_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="state_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="state_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="state_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="state_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="state_id"/>
+      <foreign-key name="fk_state_country_id" columns="state_country_id" ref-table="country" ref-schema="" ref-catalog="brain" ref-columns="country_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="fk_state_status_id" columns="state_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="fk_channel_ad1_state_id" table="channel" schema="" catalog="brain" columns="channel_ad1_state_id"/>
+      <exported-key name="fk_channel_ad2_state_id" table="channel" schema="" catalog="brain" columns="channel_ad2_state_id"/>
+      <exported-key name="fk_city_state_id" table="city" schema="" catalog="brain" columns="city_state_id"/>
+    </table>
+    <table name="status" schema="" catalog="brain" type="TABLE">
+      <column name="status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="status_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="status_name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="status_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="status_id"/>
+      <exported-key name="fk_channel_status_id" table="channel" schema="" catalog="brain" columns="channel_status_id"/>
+      <exported-key name="fk_channel_type_status_id" table="channel_type" schema="" catalog="brain" columns="channel_type_status_id"/>
+      <exported-key name="fk_city_status_id" table="city" schema="" catalog="brain" columns="city_status_id"/>
+      <exported-key name="fk_country_status_id" table="country" schema="" catalog="brain" columns="country_status_id"/>
+      <exported-key name="fk_interface_status_id" table="interface" schema="" catalog="brain" columns="interface_status_id"/>
+      <exported-key name="fk_interface_type_status_id" table="interface_type" schema="" catalog="brain" columns="interface_type_status_id"/>
+      <exported-key name="fk_language_status_id" table="language" schema="" catalog="brain" columns="language_status_id"/>
+      <exported-key name="fk_limits_type_status_id" table="limits_type" schema="" catalog="brain" columns="limits_type_status_id"/>
+      <exported-key name="fk_pack_status_id" table="pack" schema="" catalog="brain" columns="pack_status_id"/>
+      <exported-key name="fk_pack_transaction_limits_status_id" table="pack_transaction_limits" schema="" catalog="brain" columns="pack_transaction_limits_status_id"/>
+      <exported-key name="fk_pack_transactions_status_id" table="pack_transactions" schema="" catalog="brain" columns="pack_transactions_status_id"/>
+      <exported-key name="fk_prefix_status_id" table="prefix" schema="" catalog="brain" columns="prefix_status_id"/>
+      <exported-key name="fk_product_status_id" table="product" schema="" catalog="brain" columns="product_status_id"/>
+      <exported-key name="fk_product_info_status_id" table="product_info" schema="" catalog="brain" columns="product_info_status_id"/>
+      <exported-key name="fk_role_status_id" table="role" schema="" catalog="brain" columns="role_status_id"/>
+      <exported-key name="fk_service_integrator_status_id" table="service_integrator" schema="" catalog="brain" columns="service_integrator_status_id"/>
+      <exported-key name="fk_state_status_id" table="state" schema="" catalog="brain" columns="state_status_id"/>
+      <exported-key name="fk_transaction_type_status_id" table="transaction_type" schema="" catalog="brain" columns="transaction_type_status_id"/>
+      <exported-key name="fk_user_status_id" table="user" schema="" catalog="brain" columns="user_status_id"/>
+      <exported-key name="fk_wallet_status_id" table="wallet" schema="" catalog="brain" columns="wallet_status_id"/>
+      <exported-key name="fk_wallet_type_status_id" table="wallet_type" schema="" catalog="brain" columns="wallet_type_status_id"/>
+    </table>
+    <table name="transaction_type" schema="" catalog="brain" type="TABLE">
+      <column name="transaction_type_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="transaction_type_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="transaction_type_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="transaction_type_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="transaction_type_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="transaction_type_id"/>
+      <foreign-key name="fk_transaction_type_status_id" columns="transaction_type_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="fk_pack_transaction_limits_transaction_type_id" table="pack_transaction_limits" schema="" catalog="brain" columns="pack_transaction_limits_transaction_type_id"/>
+      <exported-key name="fk_pack_transactions_transaction_type_id" table="pack_transactions" schema="" catalog="brain" columns="pack_transactions_transaction_type_id"/>
+    </table>
+    <table name="transactions" schema="" catalog="brain" type="TABLE">
+      <column name="transactions_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="transactions_ch_code" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_ch_mobile" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_ch_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_ch_type_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_interface_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_parent_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_ch_recip_code" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_ch_recip_mobile" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_ch_recip_ch_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_ch_recip_ch_type_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_wallet_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_recip_wallet_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_pre_bal" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="transactions_post_bal" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="transactions_recip_pre_bal" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="transactions_recip_post_bal" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="transactions_transaction_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_trans_type_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_trans_type_code" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_ref_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transactions_agent_trans_id" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_value" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="transactions_si_code" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_si_result_code" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_si_result_desc" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_result_code" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_result_desc" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_ip" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_os" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_value1" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="transactions_value2" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="transactions_value3" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="transactions_value4" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="transactions_value5" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="transactions_value6" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="transactions_value7" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3"/>
+      <column name="transactions_v1" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_v2" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_v3" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_v4" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_v5" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_v6" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_v7" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_v8" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_v9" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="transactions_req_ts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="transactions_res_ts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <primary-key name="PRIMARY" columns="transactions_id"/>
+    </table>
+    <table name="user" schema="" catalog="brain" type="TABLE">
+      <column name="user_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="user_name" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="user_password" sqlType="VARCHAR" length="128" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="user_first_name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="user_last_name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="user_mobile_no" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="user_email_id" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="user_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="user_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="user_id"/>
+      <foreign-key name="fk_user_status_id" columns="user_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="wallet" schema="" catalog="brain" type="TABLE">
+      <column name="wallet_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="wallet_type_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="wallet_value" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3" def="MC4wMDAw"/>
+      <column name="wallet_allocated_value" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3" def="MC4wMDAw"/>
+      <column name="wallet_min_value" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3" def="MC4wMDAw"/>
+      <column name="wallet_max_value" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3" def="MC4wMDAw"/>
+      <column name="wallet_alert_value" sqlType="DECIMAL" length="19" precision="4" nullable="true" jdbcType="3" def="MC4wMDAw"/>
+      <column name="wallet_notify_msisdn" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="wallet_notify_email" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="wallet_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="wallet_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="wallet_id"/>
+      <foreign-key name="fk_wallet_status_id" columns="wallet_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="fk_channel_s_wallet_id" table="channel" schema="" catalog="brain" columns="channel_s_wallet_id"/>
+    </table>
+    <table name="wallet_type" schema="" catalog="brain" type="TABLE">
+      <column name="wallet_type_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="wallet_type_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="wallet_type_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="wallet_type_status_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def=""/>
+      <column name="wallet_type_cts" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="wallet_type_id"/>
+      <foreign-key name="fk_wallet_type_status_id" columns="wallet_type_status_id" ref-table="status" ref-schema="" ref-catalog="brain" ref-columns="status_id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+  </data-source>
+</component>
